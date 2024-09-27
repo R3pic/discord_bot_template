@@ -2,6 +2,11 @@
   "name": "discord_bot_template",
   "module": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "api": "bun run APIUpdate.ts",
+    "start": "NODE_ENV=pro bun run src/index.ts",
+    "dev": "NODE_ENV=dev bun run src/index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
